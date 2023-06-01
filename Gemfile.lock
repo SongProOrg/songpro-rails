@@ -83,6 +83,8 @@ GEM
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
+    dockerfile-rails (1.4.1)
+      rails
     erubi (1.12.0)
     execjs (2.8.1)
     ffi (1.15.5)
@@ -246,6 +248,7 @@ DEPENDENCIES
   bootsnap
   bootstrap (~> 5.2)
   debug
+  dockerfile-rails (>= 1.4)
   importmap-rails
   pg (~> 1.1)
   puma (~> 5.0)
