@@ -12,21 +12,21 @@
   <% end %>
 
   <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.label :title, class: "form-label" %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
 
   <div>
-    <%= form.label :artist, style: "display: block" %>
-    <%= form.text_field :artist %>
+    <%= form.label :artist, class: "form-label"  %>
+    <%= form.text_field :artist, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :content, class: "form-label"  %>
+    <%= form.text_area :content, class: "form-control", rows: 16 %>
   </div>
 
   <div>
-    <%= form.label :content, style: "display: block" %>
-    <%= form.text_area :content %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary" %>
   </div>
 <% end %>
