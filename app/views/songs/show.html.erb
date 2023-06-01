@@ -99,8 +99,6 @@
 <% end %>
 
 <div>
-  <%= link_to "Edit this song", edit_song_path(@song) %> |
-  <%= link_to "Back to songs", songs_path %>
-
-  <%= button_to "Destroy this song", @song, method: :delete %>
+  <%= link_to "Edit Song", edit_song_path(@song), class: "btn btn-warning" %>
+  <%= button_to "Delete Song", @song, method: :delete, class: "btn btn-danger" %>
 </div>

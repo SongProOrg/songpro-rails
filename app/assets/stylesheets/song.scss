@@ -86,7 +86,8 @@ h1.title {
     padding-left: 0.5em;
     padding-right: 0.5em;
     margin-bottom: 0.8em;
-    margin-right: -2px; // Force the left and right borders to overlap
+    /* Force the left and right borders to overlap */
+    margin-right: -2px;
 }
 
 .measure > .chord {
