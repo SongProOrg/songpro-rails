@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.2"
+# As of 2023-06-01 GitHub Actions (ubuntu-22.04) only has up to Ruby 3.2.1
+ruby "3.2.1"
 
 gem "song_pro"
 gem "bootstrap", "~> 5.2"
