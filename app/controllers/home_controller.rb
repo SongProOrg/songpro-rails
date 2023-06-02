@@ -1,27 +1,27 @@
 class HomeController < ApplicationController
   def index
     @content = <<~EOF
-      @title=Escape Capsule
-      @artist=Brian Kelly
-      !bandcamp=https://spilth.bandcamp.com/track/escape-capsule
-      
+      @title=Under the Boardwalk
+      @artist=The Drifters
+
+      # Intro
+
+      | [G] | [G] | [G] | [G] |
+
       # Verse 1
-      
-      Climb a-[D]board [A]
-      I've been [Bm]waiting for you [F#m]
-      Climb a-[G]board [D]
-      You'll be [Asus4]safe in [A7]here
-      
+
+      Oh, when the [G]sun beats down and burns the tar up on the [D]roof
+      And your [D]shoes get so hot you wish your tired feet were fire-[G]proof
+      Under the [C]boardwalk, down by the [G]sea, yeah
+      On a [G]blanket with my baby [D] is where I'll [G]be
+
       # Chorus 1
-      
-      [G] I'm a [D]rocket [F#]made for your pro-[Bm]tection
-      You're [G]safe with me, un-[A]til you leave
-      
-      # Solo
-      
-      | [Em] | [D] | [Em] | [D] |
-      | [Em] | [D] | [Em] | [F#] |
-      | [B] | [B] | [Bm] | [Bm] |
+
+      (Under the [Em]boardwalk) Out of the sun
+      (Under the [D]boardwalk) We'll be havin' some fun
+      (Under the [Em]boardwalk) People walking above
+      (Under the [D]boardwalk) We'll be making love
+      Under the [Em]board-[Em]walk ([Em]board-[Em]walk!)
     EOF
 
     @song = SongPro.parse(@content)

@@ -77,6 +77,8 @@ GEM
       popper_js (>= 2.11.6, < 3)
       sassc-rails (>= 2.0.0)
     builder (3.2.4)
+    chord_diagrams (0.0.12)
+      victor (= 0.3.2)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
@@ -230,6 +232,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.4.2)
+    victor (0.3.2)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -247,6 +250,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   bootstrap (~> 5.2)
+  chord_diagrams
   debug
   dockerfile-rails (>= 1.4)
   importmap-rails

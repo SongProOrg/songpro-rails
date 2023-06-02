@@ -1,7 +1,7 @@
-<h1><%= song.title %></h1>
-<h2><%= song.artist %></h2>
+<h1 class="title"><%= song.title %></h1>
+<h2 class="artist"><%= song.artist %></h2>
 
-<div class="information">
+<div class="sidebar">
   <dl>
     <% if song.tuning %>
       <dt class="tuning">Tuning</dt>
@@ -41,13 +41,11 @@
     <% end %>
   </dl>
   <div id="chords">
-    <div id="guitar">
-      <% song.chords.each do |chord| %>
-          <span>
-            <%#= guitar_svg chord %>
-          </span>
-      <% end %>
-    </div>
+    <% song.chords.each do |chord| %>
+        <span>
+          <%= raw ChordDiagrams.guitar_svg(chord) %>
+        </span>
+    <% end %>
   </div>
 </div>
 <% song.sections.each do |section| %>
@@ -56,7 +54,7 @@
       <%= section.name %>
     </div>
     <div class="lines">
-      <% section.lines.each do|line| %>
+      <% section.lines.each do |line| %>
         <% if line.tablature? %>
           <div class="tablature">
             <%= line.tablature %>
