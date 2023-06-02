@@ -5,6 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.2.1"
 
 gem "song_pro"
+gem "chord_diagrams"
 gem "bootstrap", "~> 5.2"
 gem "standard", group: [:development, :test]
 
