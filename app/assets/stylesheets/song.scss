@@ -1,116 +1,122 @@
 * {
-    box-sizing: border-box;
-    /*border: 1px solid #f00;*/
+  box-sizing: border-box;
+  //border: 1px solid #f00;
 }
 
 h1, h2 {
-    font-family: sans-serif;
-    text-align: center;
+  font-family: sans-serif;
+  text-align: center;
 }
 
 h1.title {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .sidebar {
-    float: right;
-    max-width: 100px;
-    text-align: right;
+  float: right;
+  max-width: 100px;
+  text-align: right;
 }
 
 #chords {
-    text-align: center;
-    font-family: sans-serif;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 .section {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    display: -webkit-box;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 
-    margin-bottom: 0.9em;
+  margin-bottom: 0.9em;
 
-    page-break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .section > .name {
-    width: 6em;
-    font-family: "Times New Roman", serif;
-    font-weight: bold;
-    font-size: 1.2rem;
-    font-style: italic;
+  width: 6em;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
 .line {
-    display: flex;
-    display: -webkit-box;
-    flex-wrap: wrap;
-    -webkit-box-align: end;
-    align-items: flex-end;
-    page-break-inside: avoid;
+  display: flex;
+  display: -webkit-box;
+  flex-wrap: wrap;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  page-break-inside: avoid;
 }
 
 .chord, .lyric {
-    text-wrap: avoid;
-    margin-right: 0.3em;
+  text-wrap: avoid;
+  margin-right: 0.3em;
 }
 
 .chord {
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 1.1rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .lyric {
-    min-height: 1.5em;
-    font-family: "Times New Roman", serif;
-    font-size: 1.4rem;
+  font-family: "Times New Roman", serif;
+  font-size: 1.4rem;
+}
+
+.part {
+  .chord {
+    // Ensure lyrics without chords line up with lyrics with chords
+    height: 1.2rem;
+  }
 }
 
 .measures {
-    display: flex;
-    display: -webkit-box;
-    flex-wrap: wrap;
-    /*max-width: 40em;*/
+  display: flex;
+  display: -webkit-box;
+  flex-wrap: wrap;
+  /*max-width: 40em;*/
 }
 
 .measure {
-    display: flex;
-    display: -webkit-box;
-    width: 10em;
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    margin-bottom: 0.8em;
-    /* Force the left and right borders to overlap */
-    margin-right: -2px;
-}
+  display: flex;
+  display: -webkit-box;
+  width: 10em;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-bottom: 0.8em;
+  /* Force the left and right borders to overlap */
+  margin-right: -2px;
 
-.measure > .chord {
+  .chord {
     /*width: 8em;*/
     flex-grow: 1;
     -webkit-box-flex: 1;
+  }
 }
 
 .tablature {
-    font-family: monospace;
-    font-size: 1.3rem;
-    line-height: 1.0rem;
-    overflow: visible;
-    white-space: nowrap;
+  font-family: monospace;
+  font-size: 1.3rem;
+  line-height: 1.0rem;
+  overflow: visible;
+  white-space: nowrap;
 }
 
 .comment {
-    font-family: "Times New Roman", serif;
-    font-size: 1.4rem;
-    font-style: italic;
-    margin-bottom: 0.5em;
-    color: #333;
-    background: #eee;
-    padding: 0.1em 0.25em;
-    border-radius: 4px;
+  font-family: "Times New Roman", serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 0.5em;
+  color: #333;
+  background: #eee;
+  padding: 0.1em 0.25em;
+  border-radius: 4px;
 }
