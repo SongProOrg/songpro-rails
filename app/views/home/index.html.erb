@@ -6,35 +6,13 @@
 
 <p>Here’s a partial example of a song in the SongPro format:</p>
 
-<pre class="border p-2"><code>@title=Escape Capsule
-@artist=Brian Kelly
-!bandcamp=https://spilth.bandcamp.com/track/escape-capsule
+<pre class="border p-2"><code><%= @content %></code></pre>
 
-# Verse 1
+<p>When converted into HTML it can look like this:</p>
 
-Climb a-[D]board [A]
-I've been [Bm]waiting for you [F#m]
-Climb a-[G]board [D]
-You'll be [Asus4]safe in [A7]here
-
-# Chorus 1
-
-[G] I'm a [D]rocket [F#]made for your pro-[Bm]tection
-You're [G]safe with me, un-[A]til you leave
-
-# Solo
-
-| [Em] | [D] | [Em] | [D] |
-| [Em] | [D] | [Em] | [F#] |
-| [B] | [B] | [Bm] | [Bm] |
-</code></pre>
-
-<p>When converted into HTML it looks like this:</p>
-
-???
-
-<p>Note: Chord diagrams are provided by the <a href="https://github.com/spilth/chord_diagrams">chord_diagrams gem</a>.
-</p>
+<div class="border p-2">
+  <%= render partial: "songs/song", locals: { song: @song } %>
+</div>
 
 <h2>SongPro Format</h2>
 
