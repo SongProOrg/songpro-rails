@@ -3,7 +3,7 @@ class SongsController < ApplicationController
 
   # GET /songs
   def index
-    @songs = Song.all
+    @songs = Song.all.order(:title, :artist)
   end
 
   # GET /songs/1
