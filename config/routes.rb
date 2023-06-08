@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :songs
 
-  get 'format', to: 'format#index'
-  get 'libraries', to: 'libraries#index'
-  get 'tools', to: 'tools#index'
+  get "format", to: "format#index"
+  get "libraries", to: "libraries#index"
+  get "tools", to: "tools#index"
 end
