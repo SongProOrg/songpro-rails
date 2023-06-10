@@ -30,4 +30,7 @@ jobs:
       - name: Run tests
         env:
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/test
-        run: bundle exec rake
+        run: |
+          bundle exec rake db:setup
+          bundle exec rake
+          
